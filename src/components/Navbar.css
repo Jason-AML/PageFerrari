@@ -1,0 +1,20 @@
+.custom-navbar {
+  position: absolute !important;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+  width: 100%;
+  z-index: 10;
+  padding: 10px 20px;
+}
+.logo {
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+}
+.nav-item {
+  color: #000;
+  font-weight: 500;
+  transition: transform 0.5s ease;
+}
+.nav-item:hover {
+  transform: scale(1.3);
+}

@@ -1,0 +1,24 @@
+.row > * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.bxr:hover {
+  animation: changeIconColor 0.5s ease-in-out forwards;
+}
+.news-body {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+.news-body strong {
+  font-size: 1rem;
+}
+.news-body p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}

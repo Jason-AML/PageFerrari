@@ -1,0 +1,110 @@
+/* Animate scroll*/
+#gallery {
+  width: 98vw;
+}
+
+#gallery h3 {
+  font-family: "" Azeret Mono "", monospace;
+}
+
+#gallery header {
+  height: 90vh;
+  display: flex;
+}
+#gallery footer {
+  height: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-group-container {
+  height: 400vh;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.img-group-container > div {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.img-group {
+  display: flex;
+}
+
+.img-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#gallery header h2 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+}
+
+.img-container h3 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1.2;
+  position: relative;
+  bottom: 30px;
+  display: inline-block;
+  color: rgb(255, 0, 0);
+}
+
+.img-container img {
+  width: 500px;
+  height: 700px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 1, 2) 0px 4px 12px;
+  transition: transform 0.3s ease-in-out;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+}
+.slide h3 {
+  text-align: center;
+}
+.img-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  #gallery header h2 {
+    font-size: 36px;
+  }
+  .img-container h3 {
+    font-size: 30px;
+    bottom: 20px;
+  }
+  .img-container img {
+    width: 300px;
+    height: 420px;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-group {
+    padding-left: 0;
+  }
+}
