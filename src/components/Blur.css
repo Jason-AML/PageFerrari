@@ -32,3 +32,17 @@
   animation: animateBlur linear both;
   animation-timeline: view();
 }
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 20px;
+  }
+  .grid-3 {
+    --row: 1;
+    font-size: 1.5em;
+  }
+  .grid-3 div {
+    grid-column: 1 / -1;
+  }
+}
